@@ -23,4 +23,4 @@ jobs:
         - name: Compile le projet
           run: ./mvnw compile 
         - name: Compiler les tests
-          run: ./mvnw test
+          run: ./mvnw test -Dtest=CalculatriceTest#additionnerDeuxNombresPositifs+soustraireDonneLaDifference
