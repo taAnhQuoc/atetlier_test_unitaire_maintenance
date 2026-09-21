@@ -9,6 +9,7 @@ jobs:
       runs-on: ubuntu-latest
       # Definitions des etapes du workflow
       steps:
+
         - name: checkout the repo
           uses: actions/checkout@v5
 
@@ -17,6 +18,8 @@ jobs:
           with:
             java-version: '25'
             distribution: 'temurin'
-            
+
         - name: Compile le projet
-          run: ./mvnw compile  
+          run: ./mvnw compile 
+        - name: Ajouter le droit
+          run: chmod +x mvnw 
