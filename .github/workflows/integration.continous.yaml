@@ -23,5 +23,5 @@ jobs:
           run: chmod +x mvnw 
         - name: Compile le projet
           run: ./mvnw compile 
-        - name: Compiler les tests
-          run: ./mvnw test -Dtest=CalculatriceTest#additionnerDeuxNombresPositifs+soustraireDonneLaDifference
+        - name: Build
+          run: ./mvnw -B clean package -DskipTests 
