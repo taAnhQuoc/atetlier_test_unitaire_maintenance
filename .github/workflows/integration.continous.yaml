@@ -3,6 +3,7 @@ name: Compilation du projet atetlier-test-unitaire
 # Le on specific moment d'execution
 on:
   push:
+  workflow_dispatch: #manuel
 #Creation des jobs
 jobs:
   compilation: # Nom du premier job qui s'execute sur un runner ubuntu
