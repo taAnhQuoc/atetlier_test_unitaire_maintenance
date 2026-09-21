@@ -22,3 +22,5 @@ jobs:
           run: chmod +x mvnw 
         - name: Compile le projet
           run: ./mvnw compile 
+        - name: Compiler les tests
+          run: ./mvnw test
