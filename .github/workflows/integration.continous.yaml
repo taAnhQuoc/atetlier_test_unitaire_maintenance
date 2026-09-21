@@ -25,3 +25,8 @@ jobs:
           run: ./mvnw compile 
         - name: Build
           run: ./mvnw -B clean package -DskipTests 
+        - name: Publier le .jar en artefact
+          uses: actions/upload-artifact@v5
+          with:
+            name: application-jar
+            path: target/*.jar    
